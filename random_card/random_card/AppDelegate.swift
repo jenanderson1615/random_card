@@ -38,6 +38,8 @@ class AppDelegate: NSObject, NSApplicationDelegate
 	func applicationDidFinishLaunching(aNotification: NSNotification)
 	{
 		// Insert code here to initialize your application
+		print(randomSuit())
+		print(randomValue())
 	}
 	
 	func applicationWillTerminate(aNotification: NSNotification)
