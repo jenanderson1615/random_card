@@ -38,10 +38,12 @@ class AppDelegate: NSObject, NSApplicationDelegate
 	func applicationDidFinishLaunching(aNotification: NSNotification)
 	{
 		// Insert code here to initialize your application
-		print(randomSuit())
-		print(randomValue())
+		//print(randomSuit())
+		//print(randomValue())
         
         cardDisplay = Card(nibName: "Card", bundle: nil)
+        cardDisplay.setRandomSuit(randomSuit())
+        cardDisplay.setRandomValue(randomValue())
         window.contentView!.addSubview(cardDisplay.view)
         cardDisplay.view.frame = (window.contentView! as NSView).bounds
 	}
