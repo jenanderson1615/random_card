@@ -60,7 +60,7 @@
 		0F33D2DE1C67E123007E498E /* Two_Diamonds.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F33D2DA1C67E123007E498E /* Two_Diamonds.png */; };
 		0F33D2DF1C67E123007E498E /* Two_Hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F33D2DB1C67E123007E498E /* Two_Hearts.png */; };
 		0F33D2E01C67E123007E498E /* Two_Spades.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F33D2DC1C67E123007E498E /* Two_Spades.png */; };
-		0F33D2E21C67F125007E498E /* King of Spades.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F33D2E11C67F125007E498E /* King of Spades.png */; };
+		0F33D2E21C67F125007E498E /* King_Spades.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F33D2E11C67F125007E498E /* King_Spades.png */; };
 		386E92491C5665D4007D0AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386E92481C5665D4007D0AF0 /* AppDelegate.swift */; };
 		386E924B1C5665D4007D0AF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386E924A1C5665D4007D0AF0 /* Assets.xcassets */; };
 		386E924E1C5665D4007D0AF0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 386E924C1C5665D4007D0AF0 /* MainMenu.xib */; };
@@ -121,7 +121,7 @@
 		0F33D2DA1C67E123007E498E /* Two_Diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Two_Diamonds.png; sourceTree = "<group>"; };
 		0F33D2DB1C67E123007E498E /* Two_Hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Two_Hearts.png; sourceTree = "<group>"; };
 		0F33D2DC1C67E123007E498E /* Two_Spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Two_Spades.png; sourceTree = "<group>"; };
-		0F33D2E11C67F125007E498E /* King of Spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "King of Spades.png"; sourceTree = "<group>"; };
+		0F33D2E11C67F125007E498E /* King_Spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = King_Spades.png; sourceTree = "<group>"; };
 		386E92451C5665D4007D0AF0 /* random_card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = random_card.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		386E92481C5665D4007D0AF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		386E924A1C5665D4007D0AF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 		386DD7E71C566D8400815814 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				0F33D2E11C67F125007E498E /* King of Spades.png */,
+				0F33D2E11C67F125007E498E /* King_Spades.png */,
 				0F33D2D91C67E123007E498E /* Two_Clubs.png */,
 				0F33D2DA1C67E123007E498E /* Two_Diamonds.png */,
 				0F33D2DB1C67E123007E498E /* Two_Hearts.png */,
@@ -327,7 +327,7 @@
 				0F33D2E01C67E123007E498E /* Two_Spades.png in Resources */,
 				0F33D2B01C67DFD3007E498E /* Eight_Spades.png in Resources */,
 				0F33D2CF1C67E0D0007E498E /* Four_Hearts.png in Resources */,
-				0F33D2E21C67F125007E498E /* King of Spades.png in Resources */,
+				0F33D2E21C67F125007E498E /* King_Spades.png in Resources */,
 				0F33D2C81C67E095007E498E /* Five_Spades.png in Resources */,
 				0F33D2DD1C67E123007E498E /* Two_Clubs.png in Resources */,
 				0F33D2BF1C67E04D007E498E /* Six_Hearts.png in Resources */,
