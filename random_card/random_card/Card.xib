@@ -3,29 +3,61 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="Card" customModule="random_card" customModuleProvider="target">
             <connections>
+                <outlet property="imageView" destination="u2J-cH-HEt" id="Lsv-rB-poT"/>
                 <outlet property="view" destination="c22-O7-iKe" id="uG2-ob-OXK"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="c22-O7-iKe">
-            <rect key="frame" x="0.0" y="0.0" width="198" height="272"/>
+            <rect key="frame" x="0.0" y="0.0" width="208" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HIu-5l-9dJ">
-                    <rect key="frame" x="18" y="235" width="37" height="17"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="6TE-RV-doc">
-                        <font key="font" metaFont="system"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
+                <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eA2-ao-Pej">
+                    <rect key="frame" x="0.0" y="0.0" width="208" height="272"/>
+                    <subviews>
+                        <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BKh-VQ-VAg">
+                            <rect key="frame" x="0.0" y="0.0" width="208" height="272"/>
+                            <subviews>
+                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u2J-cH-HEt">
+                                    <rect key="frame" x="0.0" y="0.0" width="208" height="272"/>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="F8Z-it-MKV"/>
+                                </imageView>
+                            </subviews>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="BKh-VQ-VAg" firstAttribute="top" secondItem="eA2-ao-Pej" secondAttribute="top" id="8YZ-en-IyP"/>
+                        <constraint firstAttribute="trailing" secondItem="BKh-VQ-VAg" secondAttribute="trailing" id="8uW-iP-k5U"/>
+                        <constraint firstAttribute="bottom" secondItem="BKh-VQ-VAg" secondAttribute="bottom" id="ULB-ZT-PL7"/>
+                        <constraint firstItem="BKh-VQ-VAg" firstAttribute="leading" secondItem="eA2-ao-Pej" secondAttribute="leading" id="ima-sc-ZBK"/>
+                    </constraints>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
             </subviews>
-            <point key="canvasLocation" x="95" y="362"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="eA2-ao-Pej" secondAttribute="bottom" id="8m8-iM-r3D"/>
+                <constraint firstAttribute="trailing" secondItem="eA2-ao-Pej" secondAttribute="trailing" id="MWv-1s-bG8"/>
+                <constraint firstItem="eA2-ao-Pej" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="g4U-Aa-byF"/>
+                <constraint firstItem="eA2-ao-Pej" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="poB-FI-MNM"/>
+            </constraints>
+            <point key="canvasLocation" x="100" y="362"/>
         </customView>
     </objects>
 </document>

@@ -13,8 +13,13 @@ import CoreGraphics
 
 class Card: NSViewController
 {
+    @IBOutlet var imageView: NSImageView?
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        self.view.wantsLayer = true
+        let image = NSImage(named: "Two_Clubs.png")
+        imageView!.image = image
     }
 }
