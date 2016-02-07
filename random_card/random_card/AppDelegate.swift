@@ -33,13 +33,17 @@ class AppDelegate: NSObject, NSApplicationDelegate
 {
 	
 	@IBOutlet weak var window: NSWindow!
-	
+	var cardDisplay: Card!
 	
 	func applicationDidFinishLaunching(aNotification: NSNotification)
 	{
 		// Insert code here to initialize your application
 		print(randomSuit())
 		print(randomValue())
+        
+        cardDisplay = Card(nibName: "Card", bundle: nil)
+        window.contentView!.addSubview(cardDisplay.view)
+        cardDisplay.view.frame = (window.contentView! as NSView).bounds
 	}
 	
 	func applicationWillTerminate(aNotification: NSNotification)
